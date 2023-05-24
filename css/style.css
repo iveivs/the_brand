@@ -1,0 +1,233 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.menu {
+  height: 70px;
+  background-color: #222222;
+}
+.menu__item {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__logo {
+  width: 40px;
+  margin-right: 40px;
+}
+.menu__left {
+  display: flex;
+  padding-top: 18px;
+  width: 111px;
+}
+.menu__search {
+  width: 26px;
+  padding-top: 8px;
+}
+.menu__right {
+  justify-content: right;
+  width: 168px;
+  height: 37px;
+  padding-top: 18px;
+}
+.menu__img-burger {
+  width: 32px;
+  padding-top: 5px;
+  margin-right: 18px;
+  cursor: pointer;
+}
+.menu__img-human {
+  width: 29px;
+  margin-right: 18px;
+  cursor: pointer;
+}
+.menu__img-basket {
+  width: 32px;
+  cursor: pointer;
+}
+
+.promo {
+  display: flex;
+  background-color: #F1E4E6;
+}
+.promo__img-man {
+  width: 50%;
+}
+.promo__title {
+  width: 405px;
+  height: 93px;
+  border-left: #F16D7F 12px solid;
+  margin-top: 290px;
+  padding: 8px 0 5px 15px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 42px;
+}
+
+.subtitle {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.pink_text {
+  color: #F16D7F;
+}
+.pink_text__direction {
+  color: #F16D7F;
+  font-size: 22px;
+}
+
+.direction {
+  height: 640px;
+}
+.direction__wrapper {
+  padding-top: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+.direction__box-square {
+  width: 360px;
+  height: 260px;
+  background-color: #ccc;
+  text-align: center;
+}
+.direction__box-square_women {
+  background: url(../img/women1_5.jpg) center center/cover no-repeat;
+}
+.direction__box-square_men {
+  background: url(../img/men1_5.jpg) center center/cover no-repeat;
+}
+.direction__box-square_kids {
+  background: url(../img/kids1_5.jpg) center center/cover no-repeat;
+}
+.direction__box-square__box-name {
+  padding: 110px;
+  height: 100%;
+  color: #FFF;
+  background: rgba(33, 22, 22, 0.7);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.direction__box-rectangle {
+  margin-top: 30px;
+  height: 180px;
+  background: url(../img/acsrs.png) center center/cover no-repeat;
+}
+.direction__box-rectangle_box-name {
+  padding: 67px;
+  color: #FFF;
+  background: rgba(33, 22, 22, 0.7);
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.fetured {
+  height: 1500px;
+}
+.fetured__title {
+  margin-bottom: 6px;
+  font-size: 34px;
+  font-weight: 400;
+  text-align: center;
+}
+.fetured__subtitle {
+  margin-bottom: 48px;
+  font-size: 16px;
+  color: rgb(159, 159, 159);
+  text-align: center;
+}
+.fetured__img-pink {
+  background: #F1E4E6;
+}
+.fetured__block-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.fetured__item {
+  width: 360px;
+  text-align: center;
+}
+.fetured__item img {
+  height: 420px;
+}
+.fetured__descr {
+  padding-top: 25px;
+  padding-left: 16px;
+  height: 162px;
+  background: rgb(248, 248, 248);
+}
+.fetured__card-title {
+  margin-bottom: 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.fetured__card-text {
+  margin-bottom: 18px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 300;
+  color: rgb(93, 93, 93);
+}
+.fetured__price {
+  color: #F16D7F;
+  text-align: left;
+}
+.fetured__btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 48px;
+  margin-bottom: 90px;
+  width: 212px;
+  height: 48px;
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+}
+
+.advantages {
+  background: rgb(34, 34, 36);
+}
+.advantages__wrapper {
+  height: 341px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.advantages__block {
+  width: 360px;
+}
+.advantages__block img {
+  display: block;
+  width: 45px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+}
+.advantages__title {
+  text-align: center;
+  color: rgb(251, 251, 251);
+  margin-bottom: 16px;
+  font-size: 19px;
+  font-weight: 400;
+}
+.advantages__text {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+  color: rgb(251, 251, 251);
+}
+
+.subscribe {
+  height: 448px;
+  background: url(../img/bg_sub.jpg) center center/cover no-repeat;
+}/*# sourceMappingURL=style.css.map */
