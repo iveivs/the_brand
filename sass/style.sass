@@ -205,6 +205,39 @@ $var3: #F16D7F
 .subscribe
     height: 448px
     background: url(../img/bg_sub.jpg) center (center/cover) no-repeat
-
+    &__wrapper
+        display: flex
+        align-items: center
+        
+    &__right-box
+        padding-top: 150px
+        width: 50%
+        // top: 50%
+        // transform: translate(0, -50%)
+    &__form-box
+        display: flex
+        border: 1px ridge $var3
+        border-radius: 30px
+        width: 340px
+    &__input
+        width: 200px
+        height: 49px
+        font-family: inherit
+        padding-left: 18px
+        // background-color: #E1E1E1
+        
+        // border-bottom-left-radius: 20px
+        // border-top-left-radius: 20px
+    &__btn
+        display: inline-block
+        background-color: $var3
+        width: 140px
+        border-top-right-radius: 30px
+        border-bottom-right-radius: 30px
+    &__btn-text
+        text-align: center
+        padding-top: 12px
+        // margin: 0 auto
+        color: #fff
 
 

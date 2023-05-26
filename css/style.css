@@ -230,4 +230,36 @@
 .subscribe {
   height: 448px;
   background: url(../img/bg_sub.jpg) center center/cover no-repeat;
+}
+.subscribe__wrapper {
+  display: flex;
+  align-items: center;
+}
+.subscribe__right-box {
+  padding-top: 150px;
+  width: 50%;
+}
+.subscribe__form-box {
+  display: flex;
+  border: 1px ridge #F16D7F;
+  border-radius: 30px;
+  width: 340px;
+}
+.subscribe__input {
+  width: 200px;
+  height: 49px;
+  font-family: inherit;
+  padding-left: 18px;
+}
+.subscribe__btn {
+  display: inline-block;
+  background-color: #F16D7F;
+  width: 140px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.subscribe__btn-text {
+  text-align: center;
+  padding-top: 12px;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
