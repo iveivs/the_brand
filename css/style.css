@@ -347,5 +347,11 @@
 .footer__socials__faicebook img, .footer__socials__inst img, .footer__socials__pintrest img, .footer__socials__twitter img {
   display: block;
   margin: 0 auto;
-  padding-top: 6px;
+  padding-top: 7px;
+}
+.footer__socials__faicebook:hover, .footer__socials__inst:hover, .footer__socials__pintrest:hover, .footer__socials__twitter:hover {
+  background-color: #F16D7F;
+}
+.footer__socials__faicebook:hover a, .footer__socials__inst:hover a, .footer__socials__pintrest:hover a, .footer__socials__twitter:hover a {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
