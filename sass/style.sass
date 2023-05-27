@@ -205,15 +205,56 @@ $var3: #F16D7F
 .subscribe
     height: 448px
     background: url(../img/bg_sub.jpg) center (center/cover) no-repeat
+    position: relative
+    &__opasity
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: #fff
+        opacity: 50%
+        z-index: 0
+        
     &__wrapper
         display: flex
+        justify-content: space-between
         align-items: center
-        
+    &__left-box
+        padding-top: 150px
+        width: 557px
+        display: flex
+        flex-direction: column
+        align-items: center
+        z-index: 1
+        &__text
+            text-align: center
+            font-weight: 400
+            span
+                font-style: italic
+    &__round
+        margin-bottom: 15px
+        img
+            width: 96px
+            height: 96px
+            border-radius: 100%
+
     &__right-box
         padding-top: 150px
-        width: 50%
-        // top: 50%
-        // transform: translate(0, -50%)
+        width: 557px
+        display: flex
+        flex-direction: column
+        align-items: center
+        z-index: 1
+    &__title
+        text-align: center
+        text-transform: uppercase
+        font-size: 24px
+        font-weight: 500
+        margin-bottom: 5px
+    &__subtitle
+        font-size: 18px
+        font-weight: 300
+        margin-bottom: 32px
+
     &__form-box
         display: flex
         border: 1px ridge $var3
@@ -224,10 +265,10 @@ $var3: #F16D7F
         height: 49px
         font-family: inherit
         padding-left: 18px
-        // background-color: #E1E1E1
-        
-        // border-bottom-left-radius: 20px
-        // border-top-left-radius: 20px
+        background-color: #E1E1E1
+        border-top-left-radius: 30px
+        border-bottom-left-radius: 30px
+
     &__btn
         display: inline-block
         background-color: $var3
@@ -236,8 +277,30 @@ $var3: #F16D7F
         border-bottom-right-radius: 30px
     &__btn-text
         text-align: center
-        padding-top: 12px
-        // margin: 0 auto
+        padding-top: 14px
         color: #fff
-
+.footer
+    padding-top: 24px
+    height: 80px
+    background: rgba(34, 34, 36, 1)
+    color: #fff
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__copyright
+        font-size: 16px
+        font-weight: 400
+    &__socials
+        display: flex
+        justify-content: space-between
+        &__faicebook, &__inst, &__pintrest, &__twitter
+            width: 31px
+            height: 31px
+            background: #fff
+            margin-right: 8px
+            img
+                display: block
+                margin: 0 auto
+                padding-top: 6px
+        
 

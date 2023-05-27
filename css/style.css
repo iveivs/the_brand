@@ -230,14 +230,63 @@
 .subscribe {
   height: 448px;
   background: url(../img/bg_sub.jpg) center center/cover no-repeat;
+  position: relative;
+}
+.subscribe__opasity {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 50%;
+  z-index: 0;
 }
 .subscribe__wrapper {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+.subscribe__left-box {
+  padding-top: 150px;
+  width: 557px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+.subscribe__left-box__text {
+  text-align: center;
+  font-weight: 400;
+}
+.subscribe__left-box__text span {
+  font-style: italic;
+}
+.subscribe__round {
+  margin-bottom: 15px;
+}
+.subscribe__round img {
+  width: 96px;
+  height: 96px;
+  border-radius: 100%;
 }
 .subscribe__right-box {
   padding-top: 150px;
-  width: 50%;
+  width: 557px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+.subscribe__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.subscribe__subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 32px;
 }
 .subscribe__form-box {
   display: flex;
@@ -250,6 +299,9 @@
   height: 49px;
   font-family: inherit;
   padding-left: 18px;
+  background-color: #E1E1E1;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 .subscribe__btn {
   display: inline-block;
@@ -260,6 +312,36 @@
 }
 .subscribe__btn-text {
   text-align: center;
-  padding-top: 12px;
+  padding-top: 14px;
   color: #fff;
+}
+
+.footer {
+  padding-top: 24px;
+  height: 80px;
+  background: rgb(34, 34, 36);
+  color: #fff;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__copyright {
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer__socials {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__socials__faicebook, .footer__socials__inst, .footer__socials__pintrest, .footer__socials__twitter {
+  width: 31px;
+  height: 31px;
+  background: #fff;
+  margin-right: 8px;
+}
+.footer__socials__faicebook img, .footer__socials__inst img, .footer__socials__pintrest img, .footer__socials__twitter img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 6px;
 }/*# sourceMappingURL=style.css.map */
