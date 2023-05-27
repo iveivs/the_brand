@@ -194,6 +194,10 @@
   color: #F16D7F;
   border: 1px solid #F16D7F;
 }
+.fetured__btn:hover {
+  background-color: #F16D7F;
+  color: #fff;
+}
 
 .advantages {
   background: rgb(34, 34, 36);
