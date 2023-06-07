@@ -108,7 +108,7 @@
   background: url(../img/kids1_5.jpg) center center/cover no-repeat;
 }
 .direction__box-square__box-name {
-  padding: 110px;
+  padding-top: 100px;
   height: 100%;
   color: #FFF;
   background: rgba(33, 22, 22, 0.7);
@@ -446,10 +446,21 @@
   .direction__box-rectangle {
     width: 60%;
     margin: 0 auto;
+    font-size: 20px;
+  }
+  .direction__box-rectangle_box-name {
+    font-size: 17px;
   }
   .direction__box-square {
     width: 60%;
     margin-bottom: 15px;
+  }
+  .direction__box-square__box-name {
+    padding-top: 110px;
+    font-size: 20px;
+  }
+  .pink_text__direction {
+    font-size: 20px;
   }
   .promo {
     justify-content: center;
