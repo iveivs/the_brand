@@ -429,7 +429,7 @@
 }
 @media (max-width: 575px) {
   .container {
-    width: 540px;
+    width: 340px;
   }
   .menu__img-human {
     display: none;
@@ -464,6 +464,7 @@
   }
   .promo {
     justify-content: center;
+    width: 100%;
   }
   .promo__img-man {
     display: none;
