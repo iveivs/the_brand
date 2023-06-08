@@ -444,7 +444,7 @@
     justify-content: center;
   }
   .direction__box-rectangle {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
     font-size: 20px;
   }
@@ -452,7 +452,7 @@
     font-size: 17px;
   }
   .direction__box-square {
-    width: 60%;
+    width: 90%;
     margin-bottom: 15px;
   }
   .direction__box-square__box-name {
@@ -485,6 +485,9 @@
     margin-bottom: 14px;
   }
   .footer__copyright {
+    text-align: center;
+  }
+  .subscribe__subtitle {
     text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
