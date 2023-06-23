@@ -16,6 +16,7 @@
     &__logo
         width: 40px
         margin-right: 40px
+        cursor: pointer
 
     &__left
         display: flex
@@ -24,12 +25,18 @@
 
     &__search
         width: 26px
-        padding-top: 8px
+        padding-top: 7px
+        transition: .2s
+    &__search:hover
+        border-bottom: 2px solid pink
+        padding-bottom: 3px
 
     &__right
         // width: 168px
-        height: 37px
-        padding-top: 18px
+        height: 40px
+        padding-top: 16px
+        display: flex
+        margin-top: 5px
 
     &__img-burger
         width: 32px
@@ -40,26 +47,90 @@
         width: 30px
         margin-right: 10px
         cursor: pointer
+        transition: .4s
+    &__img-human:hover
+        border-bottom: 2px solid pink
+        padding-bottom: 3px
 
     &__img-basket
         width: 32px
         margin-right: 18px
         cursor: pointer
+        transition: .2s
+    &__img-basket:hover
+        border-bottom: 2px solid pink
+        padding-bottom: 3px
+
+.menu-btn
+    width: 30px
+    height: 30px
+    position: relative
+    z-index: 2
+    overflow: hidden
+    span
+        width: 30px
+        height: 2px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background-color: #E8E8E8
+        transition: all 0.5s
+        &:nth-of-type(2)
+            top: calc(50% - 7px)
+
+        &:nth-of-type(3)
+            top: calc(50% + 7px)
+.menu1
+    position: fixed
+    top: 0px
+    left: 0
+    width: 30%
+    height: 100%
+    padding: 25px
+    font-weight: 700
+    line-height: 44px
+    letter-spacing: 4px
+    opacity: 90%
+    background: #fff
+    transform: translateX(-100%)
+    transition: transform 0.5s
+    &.active
+        transform: translateX(0)
+    &__link
+        list-style-type: none
+        text-align: center
+        transition: all .5s
+        color: #F16D7F
+        font-size: 24px
+        font-weight: 400
+        &_list
+            margin-left: 30px
+            li
+                cursor: pointer
+            li:hover
+                border-bottom: 1px solid #000
+                width: 50%
+.menu-btn.active span
+    &:nth-of-type(1)
+        display: none
+    &:nth-of-type(2)
+        top: 50%
+        transform: translate(-50%, 0%) rotate(45deg)
+
+    &:nth-of-type(3)
+        top: 50%
+        transform: translate(-50%, 0%) rotate(-45deg)
 
 .promo
-    // min-height: 720px
     display: flex
     align-items: center
     background-color: #F1E4E6
     &__img-man
         width: 50%
         margin-right: 30px
-
     &__title
-        // width: 445px
-        // height: 93px
         border-left: $var3 12px solid
-        // margin-top: 290px
         padding: 16px 0 5px 15px
 
 .title
@@ -92,12 +163,27 @@
         height: 260px
         background-color: #ccc
         text-align: center
+        transition: .4s
         &_women
             background: url(../img/women1_5.jpg) center (center/cover) no-repeat
+        &_women:hover
+            transform: scale(1.02)
+            box-shadow: 10px 5px 5px #888
+            cursor: pointer
         &_men
             background: url(../img/men1_5.jpg) center (center/cover) no-repeat
+        &_men:hover
+            transform: scale(1.02)
+            box-shadow: 10px 5px 5px #888
+            cursor: pointer
         &_kids
             background: url(../img/kids1_5.jpg) center (center/cover) no-repeat
+        &_kids:hover
+            transform: scale(1.02)
+            box-shadow: 10px 5px 5px #888
+            cursor: pointer
+        
+
         &__box-name
             padding-top: 100px
             height: 100%
@@ -109,13 +195,18 @@
         margin-top: 30px
         height: 180px
         background: url(../img/acsrs.png) center (center/cover) no-repeat
+        transition: .3s
         &_box-name
-            padding: 67px
+            padding: 68px
             color: #FFF
             background: rgba(33, 22, 22, 0.7)
             font-size: 16px
             text-transform: uppercase
             text-align: center
+    &__box-rectangle:hover
+            transform: scale(1.01)
+            box-shadow: 10px 5px 5px #888
+            cursor: pointer
 
 .fetured
     // min-height: 1500px
@@ -139,8 +230,14 @@
     &__item
         width: 360px
         text-align: center
+        margin-bottom: 16px
+        transition: .4s
         img
             height: 420px
+    &__item:hover
+            transform: scale(1.02)
+            box-shadow: 10px 5px 5px #888
+            cursor: pointer
 
     &__descr
         padding-top: 25px
