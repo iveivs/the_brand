@@ -1167,14 +1167,17 @@ a {
   visibility: hidden;
 }
 
+.cart {
+  padding-top: 90px;
+}
 .cart__content {
   display: flex;
   justify-content: space-between;
 }
-.cart__item {
+.cart__wrapper {
   display: flex;
 }
-.cart__item_head {
+.cart__wrapper_head {
   display: flex;
 }
 .cart__right form {
