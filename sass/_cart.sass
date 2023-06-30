@@ -9,12 +9,33 @@
         display: flex
         img
             height: 100%
+    &__info
+        width: 390px
+        padding-top: 22px
+        padding-left: 33px
+        padding-right: 20px
     &__item
         margin-bottom: 40px
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
-        &_head
-            display: flex
-            justify-content: space-between
+    &__header
+        font-size: 24px
+        font-weight: 400
+        margin-bottom: 42px
+        display: flex
+        justify-content: space-between
+        svg
+            cursor: pointer
+    &__description
+        font-size: 22px
+        font-weight: 300
+        line-height: 32px
+        color: #575757
+    .span-text
+        color: $colorSelectSite
+    .span-box
+        border: 1px solid #A4A4A4
+        padding: 2px 6px
+        margin-left: 10px
     &__right
         form
             font-weight: 300
@@ -34,6 +55,9 @@
     &__btn
         padding: 10px
         border: 1px solid #A4A4A4
-        font-weight: 300
+        font-weight: 300  
+        transition: .4s
+    &__btn:hover
+        box-shadow: 10px 5px 5px #888
         
             
