@@ -1165,4 +1165,19 @@ a {
   position: absolute;
   left: -999999px;
   visibility: hidden;
+}
+
+.cart__content {
+  display: flex;
+  justify-content: space-between;
+}
+.cart__item {
+  display: flex;
+}
+.cart__item_head {
+  display: flex;
+}
+.cart__right form {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
