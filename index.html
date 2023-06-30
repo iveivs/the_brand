@@ -12,7 +12,8 @@
     <title>The Brand</title>
 </head>
 <body>
-    <nav class="menu">
+    <div class="box-content">
+        <!-- <nav class="menu">
         <div class="container">
             <ul class="menu__list"> 
                 <div class="menu__item">
@@ -28,8 +29,6 @@
                         
                         <img class="menu__img-human" src="img/human.svg" alt="image-human">
                         <img class="menu__img-basket" src="img/Forma2.svg" alt="image-basket">
-                        <!-- <img class="menu__img-burger" src="img/Burger.svg" alt="menu"> -->
-                        
                             <div class="menu__img-burger menu-btn">
                                 <span></span>
                                 <span></span>
@@ -39,22 +38,67 @@
                     </div>
                 </div>
             </ul>
-            <!-- <div class="menu1">
-                <nav>
-                    <ul>
-                        <li class="menu1__item"><a class="menu1__link" href="#">Home</a></li>
-                        <li class="menu1__item"><a class="menu1__link" href="#">About</a></li>
-                        <li class="menu1__item"><a class="menu1__link" href="#">Services</a></li>
-                        <li class="menu1__item"><a class="menu1__link" href="#">Feauters</a></li>
-                        <li class="menu1__item"><a class="menu1__link" href="#">Team</a></li>
-                    </ul>
-                </nav>
-            </div> -->
-            
-            
-            
         </div>
-    </nav>
+    </nav> -->
+
+    <header class="header center">
+            <div class="header__left">
+                <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+                <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.0589 17.6249C20.6705 15.8648 21.6275 13.6038 21.769 11.2215C21.9106 8.8392 21.2281 6.48075 19.8362 4.5422C18.4443 2.60365 16.4278 1.20306 14.1252 0.575643C11.8227 -0.0517774 9.37437 0.132183 7.19143 1.09663C5.0085 2.06108 3.22389 3.74727 2.1373 5.87205C1.05071 7.99682 0.728322 10.4308 1.22426 12.7652C1.72021 15.0996 3.00428 17.1922 4.86085 18.6917C6.71741 20.1912 9.0334 21.0063 11.4199 20.9999C13.6723 21.003 15.8638 20.269 17.6599 18.9099L25.4079 26.7169C25.4934 26.806 25.5958 26.8771 25.7091 26.926C25.8225 26.975 25.9444 27.0008 26.0679 27.0019C26.1916 27.0023 26.314 26.9772 26.4276 26.9282C26.5411 26.8792 26.6434 26.8072 26.7279 26.7169C26.9018 26.536 26.999 26.2949 26.999 26.0439C26.999 25.793 26.9018 25.5518 26.7279 25.3709L19.0589 17.6249ZM2.88589 10.4999C2.89873 8.81465 3.41021 7.17089 4.35586 5.77587C5.30151 4.38086 6.63899 3.29703 8.1997 2.66102C9.76042 2.02501 11.4745 1.86529 13.1258 2.202C14.7772 2.53871 16.2919 3.35678 17.479 4.55307C18.6661 5.74935 19.4725 7.27031 19.7965 8.92421C20.1204 10.5781 19.9475 12.2909 19.2995 13.8467C18.6515 15.4024 17.5574 16.7315 16.1551 17.6664C14.7529 18.6013 13.1052 19.1001 11.4199 19.0999C9.14843 19.0891 6.97409 18.1774 5.3741 16.5651C3.77412 14.9527 2.87924 12.7714 2.88589 10.4999Z" fill="#E8E8E8"/>
+                    </svg>
+            </div>
+
+            <div class="header__right">
+                <label for="burger"><img class="header__burger-img" src="img/burger.svg" 
+                    alt="burger-menu"></label>
+                <input id="burger" type="checkbox">
+                <nav class="nav">
+                    <ul>
+                        <div class="nav__title">MENU</div>
+                        <li >
+                            <a class="nav__link" href="catalog.html">WOMAN</a>
+                            <ul>
+                                <li class="nav__list"><a href="catalog.html">T-Shirt</a></li>
+                                <li class="nav__list"><a href="catalog.html">Denim</a></li>
+                                <li class="nav__list"><a href="catalog.html">Dress</a></li>
+                                <li class="nav__list"><a href="catalog.html">Shoes</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="catalog.html">MAN</a>
+                            <ul>
+                                <li class="nav__list"><a href="catalog.html">T-Shirt</a></li>
+                                <li class="nav__list"><a href="catalog.html">Denim</a></li>
+                                <li class="nav__list"><a href="catalog.html">Dress</a></li>
+                                <li class="nav__list"><a href="catalog.html">Shoes</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="catalog.html">KIDS</a>
+                            <ul>
+                                <li class="nav__list"><a href="catalog.html">T-Shirt</a></li>
+                                <li class="nav__list"><a href="catalog.html">Denim</a></li>
+                                <li class="nav__list"><a href="catalog.html">Dress</a></li>
+                                <li class="nav__list"><a href="catalog.html">Shoes</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </nav>
+                <img src="img/man-icon.svg" alt="man-icon">
+                <img class="header__basket-icon" src="img/basket-icon.png" alt="basket-icon">
+            </div>
+
+        </header>
+        <!-- <div class="top-head center">
+            <h2 class="top-head__heading">NEW ARRIVALS</h2>
+            <nav class="breadcrumbs">
+                <a href="" class="breadcrumbs__link">HOME /</a>
+                <a href="" class="breadcrumbs__link">MEN /</a>
+                <a href="" class="breadcrumbs__link breadcrumbs__link_site">NEW ARRIVALS</a>
+            </nav>
+        </div> -->
 
     <section class="promo">
         <div class="promo__img-man">
@@ -65,7 +109,7 @@
             <h2 class="subtitle">OF LUXERIOUS  <span class="pink_text">FASHION</span></h2>
             
         </div>
-        <div class="menu1">
+        <!-- <div class="menu1">
             <nav>
                 <div class="menu1__title">MENU</div>
                 <ul>
@@ -89,7 +133,7 @@
                     <li><a class="menu1__link"  href="#">KIDS</a></li>
                 </ul>
             </nav>
-        </div>
+        </div> -->
     </section>
 
     <section class="direction">
@@ -139,7 +183,8 @@
 
             <div class="fetured__block-cards ">
                 <div class="fetured__item">
-                    <img src="img/fetured/fetured_1.jpg" alt="">
+                    <a href="product.html">
+                        <img src="img/fetured/fetured_1.jpg" alt="">
                     <div class="fetured__descr">
                         <div class="fetured__card-title">
                             ELLERY X M'O CAPSULE
@@ -151,9 +196,11 @@
                             $52.00
                         </div>
                     </div>
+                    </a>
                 </div>
                 <div class="fetured__item fetured__img-pink">
-                    <img src="img/fetured/fetured_2.png" alt="">
+                    <a href="catalog.html">
+                        <img src="img/fetured/fetured_2.png" alt="">
                     <div class="fetured__descr">
                         <div class="fetured__card-title">
                             ELLERY X M'O CAPSULE
@@ -165,10 +212,12 @@
                             $52.00
                         </div>
                     </div>
+                    </a>
                 </div>
 
                 <div class="fetured__item">
-                    <img src="img/fetured/fetured_3.jpg" alt="">
+                    <a href="catalog.html">
+                        <img src="img/fetured/fetured_3.jpg" alt="">
                     <div class="fetured__descr">
                         <div class="fetured__card-title">
                             ELLERY X M'O CAPSULE
@@ -180,11 +229,14 @@
                             $52.00
                         </div>
                     </div>
+                    </a>
+                    
                 </div>
                 
 
                 <div class="fetured__item">
-                    <img src="img/fetured/fetured_4.jpg" alt="">
+                    <a href="catalog.html">
+                        <img src="img/fetured/fetured_4.jpg" alt="">
                     <div class="fetured__descr">
                         <div class="fetured__card-title">
                             ELLERY X M'O CAPSULE
@@ -196,10 +248,13 @@
                             $52.00
                         </div>
                     </div>
+                    </a>
+                    
                 </div>
 
                 <div class="fetured__item">
-                    <img src="img/fetured/fetured_5.jpg" alt="">
+                    <a href="catalog.html">
+                        <img src="img/fetured/fetured_5.jpg" alt="">
                     <div class="fetured__descr">
                         <div class="fetured__card-title">
                             ELLERY X M'O CAPSULE
@@ -211,9 +266,12 @@
                             $52.00
                         </div>
                     </div>
+                    </a>
+                    
                 </div>
                 <div class="fetured__item">
-                    <img src="img/fetured/fetured_6.jpg" alt="">
+                    <a href="catalog.html">
+                        <img src="img/fetured/fetured_6.jpg" alt="">
                     <div class="fetured__descr">
                         <div class="fetured__card-title">
                             ELLERY X M'O CAPSULE
@@ -225,6 +283,8 @@
                             $52.00
                         </div>
                     </div>
+                    </a>
+                    
                 </div>
                 
                 
@@ -234,7 +294,7 @@
                 
             </div> -->
             
-            <button class="fetured__btn">Browse All Product</button>
+            <button class="fetured__btn"><a href="catalog.html">Browse All Product</a></button>
         </div>
     </section>
 
@@ -324,5 +384,6 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    </div>
 </body>
 </html>

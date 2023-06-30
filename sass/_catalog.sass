@@ -1,0 +1,422 @@
+@import 'variables'
+// @import 'mixins'
+// @import 'catalog'
+
+summary 
+    display: block
+
+summary::-webkit-details-marker
+    display: none
+
+body
+    font-family: 'Lato', sans-serif
+
+.center
+    padding-left: calc(50% - $widthSite / 2 )
+    padding-right: calc(50% - $widthSite / 2 )
+
+a
+    text-decoration: none
+
+.link-catalog
+    color: #FFF
+    
+.header
+    background-color: $backBlock
+    padding-top: 20px
+    padding-bottom: 20px
+    display: flex
+    justify-content: space-between
+    position: relative
+    &__left
+        display: flex
+        align-items: center
+        gap: 41px
+    &__right
+        img
+            margin-right: 14px
+    &__burger-img
+        padding-top: 4px
+
+#burger
+    position: absolute
+    left: -999999px
+    visibility: hidden
+    
+#burger:checked ~ .nav
+    right: 0px
+
+.box-content
+    overflow: hidden
+
+// .nav
+    background: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    width: 232px
+    padding: 32px
+    position: absolute
+    box-sizing: border-box
+    top: 78px
+    right: -232px
+    transition: right .3s
+    z-index: 11
+    &__title
+        margin-bottom: 14px
+    &__link
+        display: block
+        color: $colorSelectSite
+        padding-left: 16px
+        margin-bottom: 8px
+        border-bottom: 1px solid #EBEBEB
+        padding-bottom: 4px
+    &__list
+        padding-left: 35px
+        a
+            color: #6F6E6E
+    ul
+        list-style: none
+        margin-bottom: 10px
+
+
+.filter-sort
+    height: 132px
+    position: relative
+    display: flex
+    gap: $gapGrid
+    padding-top: 39px
+
+
+.filter
+    position: relative
+    width: 360px
+    padding-top: 13px
+    z-index: 10
+    &__content
+        background: #FFFFFF
+        padding-top: 0
+        padding-right: 16px
+        padding-bottom: 16px
+        padding-left: 16px
+    &[open]
+        background: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0,0, 0, 0.21)
+    &[open] .filter__heading
+        color: $colorSelectSite
+    &[open] path
+        fill: $colorSelectSite
+    &__summary
+        display: flex
+        align-items: center
+        gap: 11px
+        padding-left: 16px
+        cursor: pointer
+    &__heading
+        font-size: 14px
+        font-weight: 600
+        line-height: 17px
+        color: $colorText
+    &__item
+        margin-top: 16px
+    &__link-box
+        display: flex
+        flex-direction: column
+        gap: 11px
+        padding: 24px 16px
+    &__link
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        &:hover
+            color: $colorSelectSite
+        
+    &__head
+        padding: 8px 11px 11px 11px
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        border-bottom: 1px solid #EBEBEB
+        border-left: 5px solid $colorSelectSite
+    &__item[open] .filter__head
+        color: $colorSelectSite
+
+.sort
+    padding-top: 12px
+    display: flex
+    gap: 18px
+    &__details
+        position: relative
+    &__summary
+        display: flex
+        align-items: center
+        gap: 10px
+    &__heading
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+    &__box
+        display: flex
+        flex-direction: column
+        gap: 8px
+        position: absolute
+        left: -9px
+        top: 22px
+        background: #fff
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        padding: 7px 30px 11px 9px
+        z-index: 2
+        &_item
+            width: 130px
+            a
+                color: #6F6E6E
+        &_item:hover a
+            color: $colorSelectSite
+    &__check
+        display: flex
+        gap: 9px
+        font-weight: 400
+        font-size: 14px
+        color: #6F6E6E
+    
+    
+.product-box
+    // @include centerFlex()
+    // gap: $gapGrid
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    gap: $gapGrid
+
+
+.top-head
+    background: #F8F3F4
+    padding-top: 60px
+    padding-bottom: 60px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__heading
+        font-size: 24px
+        font-weight: 400
+        line-height: 29px
+        color: $colorSelectSite
+
+.breadcrumbs
+    &__link
+        font-size: 17px
+        font-weight: 300
+        line-height: 17px
+        color: #636363
+        &_site
+            font-weight: 700
+            color: $colorSelectSite
+
+.product-box
+    padding-bottom: 40px
+    // display: flex
+    
+    // transition: 2s  
+
+.product
+    width: 360px
+    display: flex
+    position: relative
+    flex-direction: column
+    // transition: .5s
+    &__img
+        height: 420px
+        margin: 0 auto
+        text-align: center
+    &__content
+        padding: 20px 16px
+        background-color: #F8F8F8
+        display: flex
+        flex-direction: column
+        gap: 16px
+    &__name
+        font-size: 13px
+        font-weight: 400
+        line-height: 16px
+        color: $colorText
+    &__text
+        font-size: 14px
+        color: #5D5D5D
+    &__price
+        font-size: 16px
+        line-height: 19px
+        font-style: normal
+        color: $colorSelectSite
+    &__img-pink
+        text-align: center
+        background: #F1E4E6
+        .product__content
+            text-align: left
+    &__hide-wrapper
+        display: none
+        background: rgba(33, 22, 22, 0.7)
+        width: 100%
+        height: 100%
+        position: absolute
+    &__hide-btn
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #FFF
+        gap: 10px
+        padding: 10px
+        width: 210px
+        border: 1px solid #FFF
+        position: absolute
+        top: 44%
+        left: 22%
+        cursor: pointer
+        transition: 1s
+    &__pages-box
+        border: 1px solid #EBEBEB
+        padding: 8px
+        margin-bottom: 40px
+        margin-top: 20px
+        svg
+            margin-right: 8px
+            margin-left: 8px
+        display: flex
+        ul
+            display: flex
+            li
+                margin-right: 7px
+            li:nth-child(1)
+                a
+                    color: $colorSelectSite
+            li:hover
+                a
+                    color: $colorSelectSite
+            a
+                color: #EBEBEB
+    &__img-btn-wrap
+        position: relative
+.product:hover .product__hide-wrapper
+    display: block
+
+.subscribe
+    height: 448px
+    background: url(../img/bg_sub.jpg) center (center/cover) no-repeat
+    position: relative
+    &__opasity
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: #fff
+        opacity: 50%
+        z-index: 0
+        
+    &__wrapper
+        padding-top: 151px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        align-items: center
+    &__left-box
+        display: flex
+        margin: 0 auto
+        flex-direction: column
+        align-items: center
+        z-index: 1
+        &__text
+            text-align: center
+            font-weight: 400
+            span
+                font-style: italic
+    &__round
+        margin-bottom: 15px
+        img
+            width: 96px
+            height: 96px
+            border-radius: 100%
+    &__right-box
+        display: flex
+        flex-direction: column
+        margin: 0 auto
+        align-items: center
+        z-index: 1
+    &__title
+        text-align: center
+        text-transform: uppercase
+        font-size: 24px
+        font-weight: 500
+        margin-bottom: 5px
+    &__subtitle
+        font-size: 18px
+        font-weight: 300
+        margin-bottom: 32px
+
+    &__form-box
+        display: flex
+        border: 1px ridge $colorSelectSite
+        border-radius: 30px
+        width: 340px
+    &__input
+        width: 200px
+        height: 49px
+        font-family: inherit
+        padding-left: 18px
+        background-color: #E1E1E1
+        border-top-left-radius: 30px
+        border-bottom-left-radius: 30px
+    &__btn
+        display: inline-block
+        background-color: $colorSelectSite
+        width: 140px
+        border-top-right-radius: 30px
+        border-bottom-right-radius: 30px
+    &__btn:hover
+        background-color: #ccc
+        // color: $var3
+    &__btn-text
+        text-align: center
+        padding-top: 14px
+        color: #fff
+    &__btn-text:hover
+        color: $colorSelectSite
+
+
+.footer
+    padding-top: 24px
+    padding-bottom: 24px
+    background: rgba(34, 34, 36, 1)
+    color: #fff
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__copyright
+        font-size: 16px
+        font-weight: 400
+    &__socials
+        display: flex
+        justify-content: space-between
+        &__faicebook, &__inst, &__pintrest, &__twitter
+            width: 31px
+            height: 31px
+            background: #fff
+            margin-right: 8px
+            // a
+            //     display: block
+            //     text-align: center
+            //     padding-top: 7px
+            svg
+                display: block
+                margin: 0 auto
+                margin-top: 7px
+
+.change-color:hover
+    path
+        fill: $colorSelectSite
+        // &__faicebook:hover, &__inst:hover, &__pintrest:hover, &__twitter:hover
+            // a
+                // color: #fff

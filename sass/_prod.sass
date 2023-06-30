@@ -1,0 +1,95 @@
+.show-catalog
+    position: relative
+    &__main
+        padding: 20px 0px 60px 0px
+        background: #F7F7F7
+        position: relative
+    &__img
+        display: block
+        margin: 0 auto
+    &__back-fon
+        height: 700px
+    &__item
+        border: 1px solid #EAEAEA
+        width: 80%
+        text-align: center
+        padding: 64px 0px
+        position: absolute
+        background-color: #FFF
+        top: 50%
+        left: 10%
+        z-index: 10
+        .sort
+            justify-content: center
+        .hr
+            width: 60% 
+            margin: 0 auto
+            height: 2px
+            background: #EAEAEA
+            margin-bottom: 65px
+            &_pink
+                margin: 12px auto
+                height: 4px
+                width: 100px
+                background: $colorSelectSite
+    &__title
+        color: $colorSelectSite
+        font-size: 14px
+        font-weight: 300
+    &__name
+        font-size: 14px
+        font-weight: 300
+    &__descr
+        padding-top: 48px
+        padding-bottom: 32px
+        font-size: 14px
+        font-weight: 300
+        color: #5E5E5E
+    &__price
+        color: $colorSelectSite
+        margin-bottom: 60px
+    &__btn-basket
+        padding: 10px 40px 16px 40px
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 10px
+        width: 210px
+        margin: 0 auto
+        border: 1px solid $colorSelectSite
+        margin-top: 48px
+        transition: all .3s
+    &__btn-basket:hover
+        box-shadow: 10px 5px 5px $colorSelectSite
+    &__arr
+        position: absolute
+        top: 40%
+        cursor: pointer
+        &_left
+            left: 2%
+        &_right
+            right: 2%
+            transform: rotate(180deg)
+.red
+    position: absolute
+    background: red
+    height: 500px
+    width: 400px
+    right: -400px
+    z-index: 13
+#arr2:checked ~ .red
+    right: 0px
+#arr1:checked ~ .red
+    right: 0px
+
+
+#arr2
+    position: absolute
+    left: -999999px
+    visibility: hidden
+
+#arr1
+    position: absolute
+    left: -999999px
+    visibility: hidden
+    
