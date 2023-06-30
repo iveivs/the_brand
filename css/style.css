@@ -1175,12 +1175,25 @@ a {
   justify-content: space-between;
 }
 .cart__wrapper {
+  width: 652px;
+  height: 300px;
   display: flex;
 }
-.cart__wrapper_head {
+.cart__wrapper img {
+  height: 100%;
+}
+.cart__item {
+  margin-bottom: 40px;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.cart__item_head {
   display: flex;
+  justify-content: space-between;
 }
 .cart__right form {
   display: flex;
   flex-direction: column;
+}
+.cart__input {
+  border: 1px solid #A4A4A4;
 }/*# sourceMappingURL=style.css.map */
