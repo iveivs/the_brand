@@ -1,5 +1,6 @@
 .cart
     padding-top: 90px
+    padding-bottom: 80px
     &__content
         display: flex
         justify-content: space-between
@@ -57,7 +58,53 @@
         border: 1px solid #A4A4A4
         font-weight: 300  
         transition: .4s
+        &_pink
+            display: block
+            background-color: $colorSelectSite
+            border: none
+            height: 50px
+            color: #FFF
+            margin: 0 auto
+            // text-align: center
     &__btn:hover
         box-shadow: 10px 5px 5px #888
+    &__btn-box
+        display: flex
+        justify-content: space-between
+        font-weight: 300
+        button
+            padding-left: 39px
+            padding-right: 41px
+            height: 50px
+    &__total
+        padding: 39px 34px
+        width: 360px
+        height: 214px
+        background-color: #F5F3F3
+        margin-top: 56px
+        hr
+            width: 273px
+            border: 1px solid #E2E2E2
+            text-align: center
+            margin: 0 auto
+            margin-top: 21px
+            margin-bottom: 17px
+        
+            
+    &__sub-total
+        font-size: 12px
+        font-weight: 300
+        text-align: right
+        margin-bottom: 14px
+        span
+            margin-left: 16px
+    &__grand-total
+        text-align: right
+        font-size: 16px
+        font-weight: 300
+        span
+            margin-left: 16px
+        
+
         
             
