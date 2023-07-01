@@ -73,10 +73,38 @@
                 <div class="registration__left">
                     <form action="">
                         <label for="input-name">Your Name</label>
-                        <input type="text" name="input-name">
+                        <input type="text" name="input-name" class="cart__input"  placeholder="First Name" required>
+                        <input type="text" name="input-name" class="cart__input"  placeholder="Last Name" required>
+                        <div class="registration__check-box">
+                            <div>
+                                <input type="radio" id="male" name="male">
+                                <label for="male">Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="female" name="female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                        <label for="input-name">Login details</label>
+                        <input type="email" name="adress" class="cart__input"  placeholder="Email" required>
+                        <input type="text" name="state" class="cart__input"  placeholder="Password" required>
                     </form>
+                    <p class="registration__left-text">
+                        Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
+                    </p>
+                    <button class="cart__btn">JOIN NOW <span class="span-white">&#8594</span></button>
                 </div>
-                <div class="registration__right"></div>
+                <div class="registration__right">
+                    <h2>LOYALTY HAS ITS PERKS</h2>
+                    <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+                    <ul>
+                        <li>15% off welcome offer</li>
+                        <li>Free shipping, returns and exchanges on all orders</li>
+                        <li>$10 off a purchase on your birthday</li>
+                        <li>Early access to products</li>
+                        <li>Exclusive offers & rewards</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
