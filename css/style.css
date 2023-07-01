@@ -1302,5 +1302,64 @@ a {
 }
 
 .registration__content {
+  padding-top: 64px;
+  padding-bottom: 94px;
   display: flex;
+  justify-content: space-between;
+}
+.registration__left {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+.registration__left form {
+  display: flex;
+  flex-direction: column;
+}
+.registration__left form label {
+  color: #222222;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.registration__check-box {
+  display: flex;
+  margin-bottom: 38px;
+}
+.registration__check-box div {
+  margin-right: 20px;
+}
+.registration__left-text {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.registration__right {
+  font-weight: 300;
+  width: 650px;
+}
+.registration__right h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.registration__right p {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.registration__right li {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 300;
+}
+.registration__btn {
+  width: 168px;
+  height: 50px;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #A4A4A4;
+  font-weight: 300;
+  transition: 0.4s;
+  background: #F16D7F;
 }/*# sourceMappingURL=style.css.map */
