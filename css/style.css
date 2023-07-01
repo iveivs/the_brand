@@ -1218,6 +1218,7 @@ a {
   margin-left: 10px;
 }
 .cart__right form {
+  margin-top: 10px;
   font-weight: 300;
   display: flex;
   flex-direction: column;
@@ -1263,12 +1264,15 @@ a {
   padding-right: 41px;
   height: 50px;
 }
+.cart__btn-box button a {
+  color: #222;
+}
 .cart__total {
   padding: 39px 34px;
   width: 360px;
   height: 214px;
   background-color: #F5F3F3;
-  margin-top: 56px;
+  margin-top: 76px;
 }
 .cart__total hr {
   width: 273px;
