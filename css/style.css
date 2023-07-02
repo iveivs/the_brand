@@ -104,6 +104,13 @@ a {
   list-style: none;
   margin-bottom: 10px;
 }
+.nav ul li ul li:hover {
+  border-bottom: 1px solid #ccc;
+  width: 75%;
+}
+.nav ul li ul li:hover a {
+  color: #F16D7F;
+}
 
 .promo {
   display: flex;
@@ -1203,6 +1210,9 @@ a {
 .cart__header svg {
   cursor: pointer;
 }
+.cart__header_close:hover path {
+  fill: #F16D7F;
+}
 .cart__description {
   font-size: 22px;
   font-weight: 300;
@@ -1236,6 +1246,10 @@ a {
   margin-bottom: 20px;
   padding-left: 8px;
   font-weight: 300;
+  transition: 0.5s;
+}
+.cart__input:hover {
+  box-shadow: 6px 4px 4px #888;
 }
 .cart__btn {
   padding: 10px;
@@ -1319,7 +1333,7 @@ a {
 .registration__left form label {
   color: #222222;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .registration__check-box {
   display: flex;
@@ -1327,6 +1341,12 @@ a {
 }
 .registration__check-box div {
   margin-right: 20px;
+  padding: 6px;
+  transition: 0.5s;
+}
+.registration__check-box div:hover {
+  box-shadow: 4px 3px 3px #888;
+  border-radius: 20px;
 }
 .registration__left-text {
   color: #B1B1B1;
@@ -1362,4 +1382,8 @@ a {
   font-weight: 300;
   transition: 0.4s;
   background: #F16D7F;
+}
+.registration__btn:hover {
+  box-shadow: 10px 5px 5px #888;
+  transform: scale(1.04);
 }/*# sourceMappingURL=style.css.map */

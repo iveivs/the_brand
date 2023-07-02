@@ -14,12 +14,18 @@
             label
                 color: #222222
                 font-weight: 300
-                margin-bottom: 20px
+                margin-bottom: 16px
     &__check-box
         display: flex
         margin-bottom: 38px
         div
             margin-right: 20px
+            padding: 6px
+            transition: .5s
+        div:hover
+            box-shadow: 4px 3px 3px #888
+            border-radius: 20px
+        
     &__left-text
         color: #B1B1B1
         font-size: 13px
@@ -49,3 +55,6 @@
         font-weight: 300  
         transition: .4s
         background: $colorSelectSite
+    &__btn:hover
+        box-shadow: 10px 5px 5px #888
+        transform: scale(1.04)
