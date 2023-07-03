@@ -789,6 +789,10 @@ a {
   font-size: 14px;
   color: #6F6E6E;
 }
+.sort__check:hover {
+  color: #F16D7F;
+  cursor: pointer;
+}
 
 .product-box {
   display: flex;
@@ -1051,10 +1055,6 @@ a {
   margin-top: 7px;
 }
 
-.change-color:hover path {
-  fill: #F16D7F;
-}
-
 .show-catalog {
   position: relative;
 }
@@ -1140,9 +1140,15 @@ a {
 .show-catalog__arr_left {
   left: 2%;
 }
+.show-catalog__arr_left:hover path {
+  fill: #F16D7F;
+}
 .show-catalog__arr_right {
   right: 2%;
   transform: rotate(180deg);
+}
+.show-catalog__arr:hover path {
+  fill: #F16D7F;
 }
 
 .red {

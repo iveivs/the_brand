@@ -21,6 +21,7 @@
         z-index: 10
         .sort
             justify-content: center
+
         .hr
             width: 60% 
             margin: 0 auto
@@ -67,9 +68,15 @@
         cursor: pointer
         &_left
             left: 2%
+        &_left:hover
+            path
+                fill: $colorSelectSite
         &_right
             right: 2%
             transform: rotate(180deg)
+    &__arr:hover
+        path
+            fill: $colorSelectSite
 .red
     position: absolute
     background: red
