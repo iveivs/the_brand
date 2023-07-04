@@ -14,7 +14,9 @@
     //         font-size: 24px
     //         padding: 10px
     
-    
+    .header
+        .logo
+            margin-left: 8px
 
     .title
         font-size: 44px
@@ -27,8 +29,6 @@
     .fetured
         &__item
             width: 49%
-        // &__block-cards
-        //     gap: 10px
 
     .direction
         &__box-square
@@ -50,10 +50,15 @@
             padding-top: 15px
             padding-left: 10px
             height: 140px
-    // .subscribe
-    //     .container
-    //         .subscribe__wrapper
-
+    .top-head
+        &__heading
+            padding-left: 10px
+    .breadcrumbs
+        padding-right: 10px
+    .product
+        &__pages-box
+            width: 50%
+            
 
 @media (max-width: 767px)
     .title
@@ -81,6 +86,8 @@
                 align-items: center
             .subscribe__left-box
                 margin-bottom: 30px
+    
+    
 
             
 @media (max-width: 575px)
@@ -97,6 +104,26 @@
         width: 60%
         &__link
             font-size: 18px
+    .top-head
+        flex-wrap: wrap
+        flex-direction: column
+        justify-content: center
+        &__heading
+            margin-bottom: 20px
+            text-align: center
+        .breadcrumbs
+            text-align: center
+    .filter
+        &__summary
+            span
+                display: none
+            svg
+                width: 30px
+    .filter-sort
+        padding-top: 10px
+        display: flex
+        // justify-content: space-around
+
             
     .direction
         padding-bottom: 60px
@@ -108,6 +135,7 @@
             font-size: 20px
             &_box-name
                 font-size: 17px
+                padding: 65px
         &__box-square
             width: 90%
             margin-bottom: 15px
