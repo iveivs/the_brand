@@ -693,6 +693,7 @@ a {
   display: flex;
   position: relative;
   flex-direction: column;
+  transition: 0.4s;
 }
 .product__img {
   height: 420px;
@@ -749,7 +750,15 @@ a {
   top: 44%;
   left: 22%;
   cursor: pointer;
-  transition: 1s;
+  transition: 0.5s;
+}
+.product__hide-btn:hover {
+  color: #F16D7F;
+  filter: brightness(120%);
+  border: 1px solid #F16D7F;
+}
+.product__hide-btn:hover path {
+  fill: #F16D7F;
 }
 .product__div {
   width: 100%;
