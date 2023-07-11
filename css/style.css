@@ -445,17 +445,19 @@ a {
 .footer__socials {
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 .footer__socials__faicebook, .footer__socials__inst, .footer__socials__pintrest, .footer__socials__twitter {
   width: 31px;
   height: 31px;
   background: #fff;
   margin-right: 8px;
+  text-align: center;
 }
 .footer__socials__faicebook img, .footer__socials__inst img, .footer__socials__pintrest img, .footer__socials__twitter img {
   display: block;
   margin: 0 auto;
-  padding-top: 7px;
+  padding-top: 9px;
 }
 .footer__socials__faicebook:hover, .footer__socials__inst:hover, .footer__socials__pintrest:hover, .footer__socials__twitter:hover {
   background-color: #F16D7F;
@@ -660,6 +662,7 @@ a {
   flex-wrap: wrap;
   gap: 30px;
   padding-bottom: 40px;
+  transition: 0.4s;
 }
 
 .top-head {
@@ -752,10 +755,14 @@ a {
   cursor: pointer;
   transition: 0.5s;
 }
+.product__hide-btn path {
+  transition: 0.5s;
+}
 .product__hide-btn:hover {
   color: #F16D7F;
   filter: brightness(120%);
   border: 1px solid #F16D7F;
+  transition: 0.5s;
 }
 .product__hide-btn:hover path {
   fill: #F16D7F;
@@ -777,6 +784,10 @@ a {
 .product__pages-box svg {
   margin-right: 8px;
   margin-left: 8px;
+  cursor: pointer;
+}
+.product__pages-box svg:hover path {
+  fill: #F16D7F;
 }
 .product__pages-box ul {
   display: flex;
@@ -920,6 +931,7 @@ a {
   height: 31px;
   background: #fff;
   margin-right: 8px;
+  cursor: pointer;
 }
 .footer__socials__faicebook svg, .footer__socials__inst svg, .footer__socials__pintrest svg, .footer__socials__twitter svg {
   display: block;

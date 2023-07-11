@@ -195,7 +195,7 @@ a
     flex-wrap: wrap
     gap: $gapGrid
     padding-bottom: 40px
-
+    transition: .4s
 .top-head
     background: #F8F3F4
     padding-top: 60px
@@ -273,11 +273,14 @@ a
         left: 22%
         cursor: pointer
         transition: .5s
+        path
+            transition: .5s
     &__hide-btn:hover
         color: $colorSelectSite
         filter: brightness(120%)
         border: 1px solid $colorSelectSite
-        path
+        transition: .5s
+        path    
             fill: $colorSelectSite
     &__div
         width: 100%
@@ -293,8 +296,12 @@ a
         svg
             margin-right: 8px
             margin-left: 8px
+            cursor: pointer
+        svg:hover
+            path
+                fill: $colorSelectSite
         display: flex
-        ul
+        ul  
             display: flex
             li
                 margin-right: 7px
@@ -308,8 +315,10 @@ a
                 color: #EBEBEB
     &__img-btn-wrap
         position: relative
+
 .product:hover .product__hide-wrapper
     display: block
+    
 
 .subscribe
     height: 448px
@@ -413,6 +422,7 @@ a
             height: 31px
             background: #fff
             margin-right: 8px
+            cursor: pointer
             // a
             //     display: block
             //     text-align: center
