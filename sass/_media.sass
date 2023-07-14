@@ -1,35 +1,22 @@
-@media (max-width: 991px)
-    .container
-        width: 720px
-    // .menu1
-    //     position: absolute
-    //     right: -250px
-    //     top: 0
-    //     width: 250px
-    //     background-color: #fff
-    //     // &__item
-    //     &__link
-    //         color: #F16D7F
-    //         display: block
-    //         font-size: 24px
-    //         padding: 10px
-    
+@media (max-width: 1024px)
+    .center
+        padding-left: calc(50% - $widthSite / 2.5)
+        padding-right: calc(50% - $widthSite / 2.5 )
     .header
         .logo
             margin-left: 8px
-
     .title
         font-size: 44px
     .subtitle
         font-size: 24px
-
     .promo
         &__img-man
             align-self: end
     .fetured
         &__item
-            width: 49%
-
+            width: 32%
+            img
+                height: 338px
     .direction
         &__box-square
             &__box-name
@@ -56,11 +43,50 @@
     .breadcrumbs
         padding-right: 10px
     .product
-        &__pages-box
-            width: 50%
+        width: 30%
+        &__img
+            height: 334px
+        &__content
+            width: 100%
+        &__hide-btn
+            left: 12%
+    .sort
+        margin-left: -70px
+        // display: none
+    .registration
+        &__content
+            gap: 50px
+        &__right
+            h1, p, li
+                font-size: 18px
+            
+    .cart
+        &__wrapper
+            width: 512px
+            height: 220px
+        &__item
+            margin-bottom: 50px
+        &__description
+            font-size: 22px
+            font-weight: 300
+            line-height: 26px
+        &__header
+            margin-bottom: 16px
+        &__right
+            form
+                margin-top: 10px
+        &__total
+            margin-top: 16px
+        &__btn-box
+            button
+                padding-left: 30px
+                padding-right: 30px
             
 
 @media (max-width: 767px)
+    .center
+        padding-left: calc(50% - $widthSite / 3.1)
+        padding-right: calc(50% - $widthSite / 3.1 )
     .title
         font-size: 36px
     .subtitle
@@ -77,16 +103,52 @@
         &__wrapper
             flex-direction: column
             align-items: center
+    .fetured
+        &__item
+            width: 48%
+            img
+                height: 412px
+    .product
+        width: 46%
+        &__img
+            height: 410px
+        &__hide-btn
+            left: 18%
     .subscribe
         .container
             .subscribe__wrapper
-                padding-top: 70px
+                padding-top: 48px
                 justify-content: space-between
                 flex-direction: column
                 align-items: center
+                gap: 10px
             .subscribe__left-box
                 margin-bottom: 30px
-    
+
+    .cart
+        &__content
+            flex-direction: column
+            justify-content: center
+            // text-align: center
+            align-items: center
+            margin: 0 auto
+        &__left
+            width: 98%
+        
+        &__right
+            width: 100%
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            form
+                margin-top: 42px
+                // width: 340px
+        // &__block-form
+        //     width: 100%
+        &__btn-box
+            justify-content: center
+            gap: 40px
     
 
             
@@ -168,3 +230,26 @@
     .subscribe
         &__subtitle
             text-align: center
+
+
+
+
+
+
+
+
+
+// .container
+    //     width: 720px
+    // .menu1
+    //     position: absolute
+    //     right: -250px
+    //     top: 0
+    //     width: 250px
+    //     background-color: #fff
+    //     // &__item
+    //     &__link
+    //         color: #F16D7F
+    //         display: block
+    //         font-size: 24px
+    //         padding: 10px
