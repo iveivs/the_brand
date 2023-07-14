@@ -1277,7 +1277,7 @@ a {
     padding-right: 30px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .center {
     padding-left: calc(50% - 367.7419354839px);
     padding-right: calc(50% - 367.7419354839px);
