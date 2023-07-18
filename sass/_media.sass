@@ -98,6 +98,9 @@
         &__box-rectangle
             margin-left: 5px
             margin-right: 5px
+    .product
+        &__img_pink
+            width: 46%
 @media (max-width: 768px)
     .center
         padding-left: calc(50% - $widthSite / 3.1)
@@ -133,6 +136,11 @@
             left: 18%
         &__pages-box
             width: 40%
+        &__hide-btn
+            left: 22%
+    .product
+        &__img_pink
+            width: 46%
     .subscribe
         .container
             .subscribe__wrapper
@@ -229,6 +237,7 @@
         width: 100%
         &__img-man
             display: none
+    
     .fetured
         &__block-cards
             justify-content: center
@@ -241,6 +250,9 @@
         width: 70%
         &__img
             width: 100%
+    .product
+        &__img_pink
+            width: 46%
     .footer
         &__wrapper
             padding: 10px 0 20px 0
@@ -261,8 +273,9 @@
         padding-left: calc(50% - $widthSite / 5)
         padding-right: calc(50% - $widthSite / 5 )
     .fetured
-            &__item
-                width: 90%
+        &__item
+            width: 90%
+    
     .product
         width: 80%
         &__hide-btn
@@ -331,7 +344,48 @@
             margin-bottom: 24px
         &__back-fon
             height: 600px
-            
+@media (max-width: 375px)
+    .center
+        padding-left: calc(50% - $widthSite / 6.4)
+        padding-right: calc(50% - $widthSite / 6.4 )
+    .product
+        width: 86%
+    .product__img
+        height: 340px
+    .product__img_pink
+        height: 340px
+        &__hide-btn
+            left: 18%
+    .product
+        &__hide-btn
+            left: 14%
+    .registration
+        &__left
+            width: 320px
+        &__right
+            width: 320px
+    .cart
+        &__right
+            form
+                width: 348px
+        &__total
+            width: 348px
+            margin-top: 50px
+        &__btn
+            &_pink
+                width: 250px
+        &__wrapper
+            width: 360px
+            padding-left: 0
+        &__info
+            width: 220px
+        
+        // &__header
+        //     font-size: 14px
+                // display: none
+                // display: block
+                // margin: 0 auto
+                // text-align: center
             
     
     
