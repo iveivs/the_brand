@@ -1455,6 +1455,9 @@ a {
   .fetured__item {
     width: 90%;
   }
+  .product__img {
+    height: 370px;
+  }
   .product {
     width: 80%;
   }
@@ -1462,7 +1465,10 @@ a {
     left: 22%;
   }
   .product__img_pink {
-    width: 46%;
+    width: 42%;
+  }
+  .product__img_pink {
+    height: 370px;
   }
   .sort {
     font-size: 12px;
