@@ -1,3 +1,9 @@
+.product__img_pink
+            height: 420px
+@media (max-width: 1140px)
+    .product
+        width: 30.5%
+
 @media (max-width: 1024px)
     .center
         padding-left: calc(50% - $widthSite / 2.5)
@@ -15,8 +21,8 @@
     .fetured
         &__item
             width: 32%
-            img
-                height: 338px
+        &__img
+                width: 100%
     .direction
         &__box-square
             &__box-name
@@ -45,21 +51,19 @@
     .product
         width: 30%
         &__img
-            height: 334px
+            width: 100%
         &__content
             width: 100%
         &__hide-btn
             left: 12%
     .sort
         margin-left: -70px
-        // display: none
     .registration
         &__content
             gap: 50px
         &__right
             h1, p, li
                 font-size: 18px
-            
     .cart
         &__wrapper
             width: 512px
@@ -81,8 +85,19 @@
             button
                 padding-left: 30px
                 padding-right: 30px
-            
-
+@media (max-width: 992px)
+    .fetured
+            &__item
+                margin-left: 8px
+                margin-right: 8px
+                width: 42%
+    .direction
+        &__wrapper
+            padding-left: 5px
+            padding-right: 5px
+        &__box-rectangle
+            margin-left: 5px
+            margin-right: 5px
 @media (max-width: 768px)
     .center
         padding-left: calc(50% - $widthSite / 3.1)
@@ -96,7 +111,7 @@
         &__img-man
             height: 100%
             margin-right: 10px
-
+    
     .advantages
         padding-top: 40px
         padding-bottom: 60px
@@ -105,15 +120,19 @@
             align-items: center
     .fetured
         &__item
+            margin-left: 0px
+            margin-right: 0px
             width: 48%
-            img
-                height: 412px
+        &__img
+                width: 100%
     .product
         width: 46%
         &__img
-            height: 410px
+            width: 100%
         &__hide-btn
             left: 18%
+        &__pages-box
+            width: 40%
     .subscribe
         .container
             .subscribe__wrapper
@@ -129,7 +148,6 @@
         &__content
             flex-direction: column
             justify-content: center
-            // text-align: center
             align-items: center
             margin: 0 auto
         &__left
@@ -143,9 +161,6 @@
             align-items: center
             form
                 margin-top: 42px
-                // width: 340px
-        // &__block-form
-        //     width: 100%
         &__btn-box
             justify-content: center
             gap: 40px
@@ -153,8 +168,8 @@
 
             
 @media (max-width: 575px)
-    .container
-        width: 340px
+    // .container
+    //     width: 340px
     .menu
         position: fixed
         width: 100%
@@ -170,6 +185,7 @@
         flex-wrap: wrap
         flex-direction: column
         justify-content: center
+        align-items: center
         &__heading
             margin-bottom: 20px
             text-align: center
@@ -184,20 +200,22 @@
     .filter-sort
         padding-top: 10px
         display: flex
-        // justify-content: space-around
-
-            
     .direction
         padding-bottom: 60px
         &__wrapper
+            flex-wrap: nowrap
+            justify-content: center
+            flex-direction: column
+            align-items: center
             justify-content: center
         &__box-rectangle
+            display: block
             width: 90%
             margin: 0 auto
             font-size: 20px
             &_box-name
                 font-size: 17px
-                padding: 65px
+                padding: 69px
         &__box-square
             width: 90%
             margin-bottom: 15px
@@ -215,8 +233,14 @@
         &__block-cards
             justify-content: center
         &__item
-            width: 98%
+            width: 70%
             margin-bottom: 16px
+        &__img
+                width: 100%
+    .product
+        width: 70%
+        &__img
+            width: 100%
     .footer
         &__wrapper
             padding: 10px 0 20px 0
@@ -232,10 +256,85 @@
             text-align: center
 
 
-
-
-
-
+@media (max-width: 425px)
+    .center
+        padding-left: calc(50% - $widthSite / 5)
+        padding-right: calc(50% - $widthSite / 5 )
+    .fetured
+            &__item
+                width: 90%
+    .product
+        width: 80%
+        &__hide-btn
+            left: 22%
+        &__img_pink
+            width: 46%
+            // &__img
+            //     width: 100%
+    
+    .sort
+        font-size: 12px
+        margin-left: 0px
+        margin-right: 18px
+        gap: 40px
+        &__summary
+            gap: 0px
+        
+    .registration
+        &__content
+            flex-direction: column
+        &__left
+            margin: 0 auto
+        &__right
+            width: 370px
+            margin: 0 auto
+    .subscribe__wrapper
+        padding-top: 40px
+    .cart
+        &__right
+            display: flex
+            flex-direction: column
+        &__wrapper
+            width: 412px
+            padding-left: 8px
+            padding-right: 0px
+            // margin-right: 80px
+        &__info
+            width: 290px
+            padding-left: 23px
+        &__header
+            font-size: 18px
+        &__description
+            font-size: 16px
+        &__btn-box
+            margin-top: 42px
+            button
+                padding-left: 12px
+                padding-right: 12px
+        &__btn
+            font-size: 14px
+            &_pink
+                width: 300px
+    .sort__heading
+        font-size: 10px
+        margin-right: 2px
+    .show-catalog
+        &__item
+            padding-top: 0px
+            padding-bottom: 40px
+            border-left: none
+            border-right: none
+            border-top: none
+        &__main
+            padding-bottom: 10px
+        .hr
+            margin-bottom: 24px
+        &__back-fon
+            height: 600px
+            
+            
+    
+    
 
 
 
