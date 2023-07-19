@@ -1496,9 +1496,10 @@ a {
     padding-top: 30px;
   }
   .sort {
-    width: 240px;
+    width: 310px;
     font-size: 12px;
-    margin-left: -90px;
+    margin-left: 0px;
+    margin-right: 14px;
     gap: 12px;
   }
   .sort__summary {
@@ -1519,11 +1520,11 @@ a {
     width: 320px;
     font-size: 20px;
   }
-  .filter {
-    margin-left: 10px;
-  }
   .filter svg {
     width: 36px;
+  }
+  .filter__content {
+    width: 160px;
   }
   .registration__content {
     flex-direction: column;
@@ -1610,6 +1611,10 @@ a {
   .sort2 {
     width: 316px;
     margin-left: -14px;
+  }
+  .sort {
+    width: 180px;
+    gap: 18px;
   }
   .registration__left {
     width: 320px;
