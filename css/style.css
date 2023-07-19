@@ -1479,6 +1479,12 @@ a {
   .cart__wrapper {
     width: 98%;
   }
+  .show-catalog__item {
+    padding-bottom: 40px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+  }
 }
 @media (max-width: 425px) {
   .center {
@@ -1560,13 +1566,14 @@ a {
   }
   .cart__wrapper {
     width: 99%;
-    padding-left: 8px;
+    padding-left: 4px;
     padding-right: 0px;
     padding-left: 0px;
   }
   .cart__info {
     width: 290px;
     padding-left: 23px;
+    padding-right: 13px;
   }
   .cart__header {
     font-size: 18px;
