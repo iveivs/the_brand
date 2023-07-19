@@ -782,6 +782,10 @@ a {
   margin-top: 7px;
 }
 
+.sort__heading_hide2 {
+  display: none;
+}
+
 .show-catalog {
   position: relative;
 }
@@ -982,11 +986,15 @@ a {
   height: 40px;
   margin-bottom: 20px;
   padding-left: 8px;
+  padding-right: 10px;
   font-weight: 300;
   transition: 0.5s;
 }
 .cart__input:hover {
   box-shadow: 6px 4px 4px #888;
+}
+.cart__title:hover h2 {
+  color: #F16D7F;
 }
 .cart__btn {
   padding: 10px;
@@ -1115,10 +1123,10 @@ a {
   height: 50px;
   color: #fff;
   padding: 10px;
-  border: 1px solid #A4A4A4;
   font-weight: 300;
   transition: 0.4s;
   background: #F16D7F;
+  margin-bottom: 20px;
 }
 .registration__btn:hover {
   box-shadow: 10px 5px 5px #888;
@@ -1374,6 +1382,9 @@ a {
     padding-top: 10px;
     display: flex;
   }
+  .sort {
+    width: 420px;
+  }
   .direction {
     padding-bottom: 60px;
   }
@@ -1446,6 +1457,16 @@ a {
   .subscribe__subtitle {
     text-align: center;
   }
+  .registration__content {
+    flex-direction: column;
+  }
+  .registration__left {
+    margin: 0 auto;
+  }
+  .registration__right {
+    width: 370px;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 425px) {
   .center {
@@ -1453,7 +1474,7 @@ a {
     padding-right: calc(50% - 228px);
   }
   .fetured__item {
-    width: 90%;
+    width: 84%;
   }
   .product__img {
     height: 370px;
@@ -1470,14 +1491,39 @@ a {
   .product__img_pink {
     height: 370px;
   }
+  .filter-sort {
+    align-items: flex-start;
+    padding-top: 30px;
+  }
   .sort {
+    width: 240px;
     font-size: 12px;
-    margin-left: 0px;
-    margin-right: 18px;
-    gap: 40px;
+    margin-left: -90px;
+    gap: 12px;
   }
   .sort__summary {
-    gap: 0px;
+    gap: 4px;
+  }
+  .sort__heading {
+    font-size: 12px;
+    margin-right: 2px;
+  }
+  .sort__heading_hide1 {
+    display: none;
+  }
+  .sort__heading_hide2 {
+    display: block;
+  }
+  .sort2 {
+    margin: 0 auto;
+    width: 320px;
+    font-size: 20px;
+  }
+  .filter {
+    margin-left: 10px;
+  }
+  .filter svg {
+    width: 36px;
   }
   .registration__content {
     flex-direction: column;
@@ -1524,10 +1570,6 @@ a {
   .cart__btn_pink {
     width: 300px;
   }
-  .sort__heading {
-    font-size: 10px;
-    margin-right: 2px;
-  }
   .show-catalog__item {
     padding-top: 0px;
     padding-bottom: 40px;
@@ -1564,6 +1606,10 @@ a {
   }
   .product__hide-btn {
     left: 14%;
+  }
+  .sort2 {
+    width: 316px;
+    margin-left: -14px;
   }
   .registration__left {
     width: 320px;

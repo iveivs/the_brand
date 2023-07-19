@@ -208,6 +208,9 @@
     .filter-sort
         padding-top: 10px
         display: flex
+    .sort
+        width: 420px
+        
     .direction
         padding-bottom: 60px
         &__wrapper
@@ -266,6 +269,14 @@
     .subscribe
         &__subtitle
             text-align: center
+    .registration
+        &__content
+            flex-direction: column
+        &__left
+            margin: 0 auto
+        &__right
+            width: 370px
+            margin: 0 auto
 
 
 @media (max-width: 425px)
@@ -274,7 +285,7 @@
         padding-right: calc(50% - $widthSite / 5 )
     .fetured
         &__item
-            width: 90%
+            width: 84%
     .product__img
         height: 370px
     .product
@@ -283,18 +294,33 @@
             left: 22%
         &__img_pink
             width: 42%
-            // &__img
-            //     width: 100%
     .product__img_pink
         height: 370px
+    .filter-sort
+        align-items: flex-start
+        padding-top: 30px
     .sort
+        width: 240px
         font-size: 12px
-        margin-left: 0px
-        margin-right: 18px
-        gap: 40px
+        margin-left: -90px
+        gap: 12px
         &__summary
-            gap: 0px
-        
+            gap: 4px
+        &__heading
+            font-size: 12px
+            margin-right: 2px
+            &_hide1
+                display: none
+            &_hide2
+                display: block
+    .sort2
+        margin: 0 auto
+        width: 320px
+        font-size: 20px
+    .filter
+        margin-left: 10px
+        svg
+            width: 36px
     .registration
         &__content
             flex-direction: column
@@ -330,9 +356,7 @@
             font-size: 14px
             &_pink
                 width: 300px
-    .sort__heading
-        font-size: 10px
-        margin-right: 2px
+    
     .show-catalog
         &__item
             padding-top: 0px
@@ -361,11 +385,29 @@
     .product
         &__hide-btn
             left: 14%
+    .sort2
+        width: 316px
+        margin-left: - 14px
+        // font-size: 20px
     .registration
         &__left
             width: 320px
         &__right
             width: 320px
+    // .sort
+    //     width: 320px
+    //     // display: none
+    //     font-size: 12px
+    //     // margin-left: px
+    //     margin-right: 18px
+    //     gap: 12px
+    //     &__summary
+    //         width: 80px
+    //         // gap: 0px
+    // .filter
+    //     // width: 40px
+    //     svg
+    //         width: 20px
     .cart
         &__right
             form
