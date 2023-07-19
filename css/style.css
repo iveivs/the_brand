@@ -1476,6 +1476,9 @@ a {
     width: 370px;
     margin: 0 auto;
   }
+  .cart__wrapper {
+    width: 98%;
+  }
 }
 @media (max-width: 425px) {
   .center {
@@ -1552,10 +1555,14 @@ a {
     display: flex;
     flex-direction: column;
   }
+  .cart__item {
+    padding-left: 4px;
+  }
   .cart__wrapper {
-    width: 412px;
+    width: 99%;
     padding-left: 8px;
     padding-right: 0px;
+    padding-left: 0px;
   }
   .cart__info {
     width: 290px;
@@ -1644,7 +1651,6 @@ a {
     width: 250px;
   }
   .cart__wrapper {
-    width: 360px;
     padding-left: 0;
   }
   .cart__info {
